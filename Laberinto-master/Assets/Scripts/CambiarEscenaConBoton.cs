@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class cambiarScena : MonoBehaviour
+public class CambiarEscenaConBoton : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -12,12 +11,8 @@ public class cambiarScena : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void EscenaConBoton(string sceneName)
     {
-        
-    }
-
-     public void comenzarJuego(){
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(sceneName);
     }
 }

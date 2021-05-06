@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class cambiarScena : MonoBehaviour
+public class CambiarEscena : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -11,13 +10,15 @@ public class cambiarScena : MonoBehaviour
         
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+            SceneManager.LoadScene("Scene2");
+    }
+
     // Update is called once per frame
     void Update()
     {
         
-    }
-
-     public void comenzarJuego(){
-        SceneManager.LoadScene("SampleScene");
     }
 }
