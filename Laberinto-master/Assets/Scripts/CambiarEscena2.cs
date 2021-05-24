@@ -2,16 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class CambiarEscenaConBoton : MonoBehaviour
+
+public class CambiarEscena2 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
-    void EscenaConBoton()
+    void Update()
+    {
+
+    }
+
+    public void segundoNivel()
     {
         SceneManager.LoadScene("Scene2");
     }

@@ -13,7 +13,7 @@ public class CambiarEscena : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
-            SceneManager.LoadScene("Scene2");
+            SceneManager.LoadScene("Scene2Introduccion2");
     }
 
     // Update is called once per frame
